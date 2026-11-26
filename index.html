@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northern Skies · Dev Tour</title>
+<style>
+  :root{
+    --bg:#0b1220; --panel:#121b2b; --line:#22304a; --text:#e7edf7; --muted:#8fa3c0;
+    --cyan:#67e8f9; --amber:#fbbf24;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+       font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif}
+  header{padding:28px 20px 8px;max-width:1180px;margin:0 auto}
+  h1{margin:0;font-size:26px;letter-spacing:.12em;font-weight:600}
+  .sub{color:var(--muted);font-size:13px;letter-spacing:.08em;margin-top:6px}
+  .bar{height:3px;width:96px;background:var(--cyan);margin:12px 0 0;border-radius:2px}
+  main{max-width:1180px;margin:0 auto;padding:8px 20px 60px}
+  section{margin-top:34px}
+  h2{font-size:14px;letter-spacing:.16em;color:var(--cyan);font-weight:600;margin:0 0 12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+  figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  figure a{display:block}
+  img{display:block;width:100%;height:auto;background:#0e1626}
+  figcaption{padding:10px 12px;font-size:12px;color:var(--muted);letter-spacing:.06em;
+             display:flex;justify-content:space-between;gap:10px}
+  .tag{color:var(--amber)}
+  .empty{background:var(--panel);border:1px dashed var(--line);border-radius:10px;
+         padding:22px;color:var(--muted);font-size:13px}
+  a{color:var(--cyan);text-decoration:none}
+  footer{max-width:1180px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:12px}
+  .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan);
+       margin-right:6px;vertical-align:middle}
+</style>
+</head>
+<body>
+<header>
+  <h1>NORTHERN SKIES</h1>
+  <div class="sub"><span class="dot"></span>DEV TOUR · 截图随时更新</div>
+  <div class="bar"></div>
+  <div class="sub" id="stamp">更新于 —</div>
+</header>
+
+<main>
+  <section>
+    <h2>主菜单</h2>
+    <div class="grid">
+      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1920.png">
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1920.png?v=3" alt="主菜单 1920"></a>
+        <figcaption><span>主菜单</span><span class="tag">1920×1080</span></figcaption></figure>
+      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1920.png">
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1920.png?v=3" alt="机场选择 1920"></a>
+        <figcaption><span>机场选择</span><span class="tag">1920×1080</span></figcaption></figure>
+      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1280.png">
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1280.png?v=3" alt="主菜单 1280"></a>
+        <figcaption><span>主菜单</span><span class="tag">1280×720</span></figcaption></figure>
+      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1280.png">
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1280.png?v=3" alt="机场选择 1280"></a>
+        <figcaption><span>机场选择</span><span class="tag">1280×720</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>飞行 HUD</h2>
+    <div class="grid">
+      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1920.png">
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1920.png?v=3" alt="HUD 1920"></a>
+        <figcaption><span>九宫格玻璃面板</span><span class="tag">1920×1080</span></figcaption></figure>
+      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1280.png">
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1280.png?v=3" alt="HUD 1280"></a>
+        <figcaption><span>九宫格玻璃面板</span><span class="tag">1280×720</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>小地图</h2>
+    <div class="grid">
+      <div class="empty">小地图截图生成中，稍后自动出现。</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>视频</h2>
+    <div class="empty">20 秒观光片段：<a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/v1/NorthernSkies-tour.mp4">下载 / 播放 MP4</a></div>
+  </section>
+</main>
+
+<footer>Northern Skies · 内部开发导览 · 数据来自最新一次构建</footer>
+
+<script>
+  // 图片加载失败时淡出占位，避免碎图
+  document.querySelectorAll('img').forEach(function (img) {
+    img.addEventListener('error', function () {
+      var f = img.closest('figure'); if (f) f.style.display = 'none';
+    });
+  });
+  document.getElementById('stamp').textContent = '更新于 ' + new Date().toLocaleString('zh-CN');
+</script>
+</body>
+</html>
