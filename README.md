@@ -14,6 +14,14 @@
 
 [1920 main](https://github.com/Iostream3100/northernskies-dev-tour/releases/download/v1/menu-main-1920.png) · [1920 cards](https://github.com/Iostream3100/northernskies-dev-tour/releases/download/v1/menu-airports-1920.png)
 
-## HUD concept (#249)
+## HUD screenshots (#249)
+
+![Airport HUD](https://github.com/Iostream3100/northernskies-dev-tour/releases/download/v1/hud-airport-1280.png)
+
+![Vancouver HUD](https://github.com/Iostream3100/northernskies-dev-tour/releases/download/v1/hud-vancouver-1280.png)
+
+[1920 airport](https://github.com/Iostream3100/northernskies-dev-tour/releases/download/v1/hud-airport-1920.png) · [1920 vancouver](https://github.com/Iostream3100/northernskies-dev-tour/releases/download/v1/hud-vancouver-1920.png)
+
+## HUD concept
 
 ![HUD concept](https://github.com/Iostream3100/northernskies-dev-tour/releases/download/v1/hud-concept.png)
