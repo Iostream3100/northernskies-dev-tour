@@ -24,8 +24,9 @@
   figure a{display:block}
   img{display:block;width:100%;height:auto;background:#0e1626}
   figcaption{padding:10px 12px;font-size:12px;color:var(--muted);letter-spacing:.06em;
-             display:flex;justify-content:space-between;gap:10px}
+             display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
   .tag{color:var(--amber)}
+  .alt{color:var(--muted)}
   .empty{background:var(--panel);border:1px dashed var(--line);border-radius:10px;
          padding:22px;color:var(--muted);font-size:13px}
   a{color:var(--cyan);text-decoration:none}
@@ -47,17 +48,11 @@
     <h2>主菜单</h2>
     <div class="grid">
       <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1920.png">
-        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1920.png?v=3" alt="主菜单 1920"></a>
-        <figcaption><span>主菜单</span><span class="tag">1920×1080</span></figcaption></figure>
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1920.png?v=4" alt="主菜单"></a>
+        <figcaption><span>主菜单</span><span><span class="tag">1920×1080</span> · <a class="alt" href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1280.png">1280 版</a></span></figcaption></figure>
       <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1920.png">
-        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1920.png?v=3" alt="机场选择 1920"></a>
-        <figcaption><span>机场选择</span><span class="tag">1920×1080</span></figcaption></figure>
-      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1280.png">
-        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-main-1280.png?v=3" alt="主菜单 1280"></a>
-        <figcaption><span>主菜单</span><span class="tag">1280×720</span></figcaption></figure>
-      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1280.png">
-        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1280.png?v=3" alt="机场选择 1280"></a>
-        <figcaption><span>机场选择</span><span class="tag">1280×720</span></figcaption></figure>
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1920.png?v=4" alt="机场选择"></a>
+        <figcaption><span>机场选择</span><span><span class="tag">1920×1080</span> · <a class="alt" href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/menu-airports-1280.png">1280 版</a></span></figcaption></figure>
     </div>
   </section>
 
@@ -65,18 +60,11 @@
     <h2>飞行 HUD</h2>
     <div class="grid">
       <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1920.png">
-        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1920.png?v=3" alt="HUD 1920"></a>
-        <figcaption><span>九宫格玻璃面板</span><span class="tag">1920×1080</span></figcaption></figure>
-      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1280.png">
-        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1280.png?v=3" alt="HUD 1280"></a>
-        <figcaption><span>九宫格玻璃面板</span><span class="tag">1280×720</span></figcaption></figure>
-    </div>
-  </section>
-
-  <section>
-    <h2>小地图</h2>
-    <div class="grid">
-      <div class="empty">小地图截图生成中，稍后自动出现。</div>
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1920.png?v=4" alt="飞行 HUD"></a>
+        <figcaption><span>九宫格玻璃面板</span><span><span class="tag">1920×1080</span> · <a class="alt" href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/hud-1280.png">1280 版</a></span></figcaption></figure>
+      <figure><a href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/minimap-1920.png">
+        <img src="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/minimap-1920.png?v=4" alt="小地图"></a>
+        <figcaption><span>左下角小地图</span><span><span class="tag">1920×1080</span> · <a class="alt" href="https://github.com/Iostream3100/northernskies-dev-tour/releases/download/latest/minimap-1280.png">1280 版</a></span></figcaption></figure>
     </div>
   </section>
 
@@ -89,7 +77,6 @@
 <footer>Northern Skies · 内部开发导览 · 数据来自最新一次构建</footer>
 
 <script>
-  // 图片加载失败时淡出占位，避免碎图
   document.querySelectorAll('img').forEach(function (img) {
     img.addEventListener('error', function () {
       var f = img.closest('figure'); if (f) f.style.display = 'none';
